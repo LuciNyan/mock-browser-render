@@ -1,3 +1,8 @@
+'use strict';
+/**
+ * Stage 1
+ * 完成了最简单的分词功能
+ */
 const fs = require('fs')
 const tokenizer = require('./tokenizer')
 

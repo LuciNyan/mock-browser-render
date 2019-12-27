@@ -1,3 +1,9 @@
+'use strict';
+/**
+ * Stage 2
+ * 完成了最简单的Tokens 解析
+ * 属性节点 和 注释节点未涉及到
+ */
 const fs = require('fs')
 const tokenizer = require('./tokenizer')
 const compiler = require('./compiler')
