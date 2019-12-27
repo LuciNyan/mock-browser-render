@@ -1,7 +1,7 @@
 const fs = require('fs')
 const tokenizer = require('./tokenizer')
 
-const html = fs.readFileSync('./examples/stage2/index.html', 'utf8')
+const html = fs.readFileSync('./src/examples/stage1/index.html', 'utf8')
 console.log(html)
 
 const tokens = tokenizer(html)
