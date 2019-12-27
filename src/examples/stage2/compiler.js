@@ -56,7 +56,7 @@ function compiler(tokens) {
             // 如果走到这里，说明 token.type === 'endTag'
             const tag = stack.shift()
             if (token.value !== tag.value) {
-                throw new Error('标签没闭合');
+                throw new Error('标签没闭合')
             }
             current++
 
@@ -78,8 +78,6 @@ function compiler(tokens) {
     while (current < len) {
         nodeDocument.childNodes.push(walk());
     }
-
-    console.log(stack)
 
     return nodeDocument
 }
